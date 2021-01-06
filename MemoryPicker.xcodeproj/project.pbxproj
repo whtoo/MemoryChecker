@@ -13,6 +13,7 @@
 		5861E1FA25A58AAD00E9C701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5861E1F925A58AAD00E9C701 /* Preview Assets.xcassets */; };
 		5861E20525A58AAD00E9C701 /* MemoryPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861E20425A58AAD00E9C701 /* MemoryPickerTests.swift */; };
 		5861E21025A58AAD00E9C701 /* MemoryPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861E20F25A58AAD00E9C701 /* MemoryPickerUITests.swift */; };
+		5861E22125A5905600E9C701 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861E22025A5905600E9C701 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		5861E20B25A58AAD00E9C701 /* MemoryPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5861E20F25A58AAD00E9C701 /* MemoryPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPickerUITests.swift; sourceTree = "<group>"; };
 		5861E21125A58AAD00E9C701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5861E22025A5905600E9C701 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				5861E1F625A58AAD00E9C701 /* Assets.xcassets */,
 				5861E1FB25A58AAD00E9C701 /* Info.plist */,
 				5861E1F825A58AAD00E9C701 /* Preview Content */,
+				5861E22025A5905600E9C701 /* CardView.swift */,
 			);
 			path = MemoryPicker;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5861E1F525A58AAC00E9C701 /* ContentView.swift in Sources */,
+				5861E22125A5905600E9C701 /* CardView.swift in Sources */,
 				5861E1F325A58AAC00E9C701 /* MemoryPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

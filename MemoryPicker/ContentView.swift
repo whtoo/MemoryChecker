@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack {
+                ForEach(0..<3,content: {
+                    index in
+                    CardView(isFaceUp: false)
+                })
+        }.foregroundColor(.orange).padding().font(.largeTitle)
     }
 }
 
