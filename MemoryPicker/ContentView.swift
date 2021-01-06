@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    var viewModel : EmojiMemoryGame
+    
     var body: some View {
         HStack {
-                ForEach(0..<3,content: {
-                    index in
-                    CardView(isFaceUp: false)
+            ForEach(viewModel.cards) {
+                    card in
+                CardView(card: card).onTapGesture(perform: {
+                    viewModel.choose(card: card)
                 })
+            }
         }.foregroundColor(.orange).padding().font(.largeTitle)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: EmojiMemoryGame())
     }
 }
