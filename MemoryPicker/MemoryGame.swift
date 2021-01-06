@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MemoryGame<CardContent> {
+struct MemoryGame<CardContent>  {
     var cards : Array<Card>
     
     func index(choosenCard : Card) -> Int {
@@ -18,7 +18,7 @@ struct MemoryGame<CardContent> {
             }
             idx += 1
         }
-        return 0
+        return 0 // TODO : bogus!
     }
     
     mutating func choose(card : Card) {
