@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580D065C25A5F7CC000EF3A7 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D065B25A5F7CC000EF3A7 /* GridLayout.swift */; };
+		585507C525A6DA16002DA890 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585507C425A6DA16002DA890 /* Array+Identifiable.swift */; };
 		5861E1F325A58AAC00E9C701 /* MemoryPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861E1F225A58AAC00E9C701 /* MemoryPickerApp.swift */; };
 		5861E1F525A58AAC00E9C701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861E1F425A58AAC00E9C701 /* ContentView.swift */; };
 		5861E1F725A58AAD00E9C701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5861E1F625A58AAD00E9C701 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		580D065B25A5F7CC000EF3A7 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		585507C425A6DA16002DA890 /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		5861E1EF25A58AAC00E9C701 /* MemoryPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5861E1F225A58AAC00E9C701 /* MemoryPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPickerApp.swift; sourceTree = "<group>"; };
 		5861E1F425A58AAC00E9C701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,7 +115,9 @@
 				5861E22025A5905600E9C701 /* CardView.swift */,
 				5861E22525A5923400E9C701 /* MemoryGame.swift */,
 				5861E22A25A5931200E9C701 /* EmojiMemoryGame.swift */,
+				580D065B25A5F7CC000EF3A7 /* GridLayout.swift */,
 				5861E22F25A5DC8B00E9C701 /* Grid.swift */,
+				585507C425A6DA16002DA890 /* Array+Identifiable.swift */,
 			);
 			path = MemoryPicker;
 			sourceTree = "<group>";
@@ -276,6 +282,8 @@
 				5861E22625A5923400E9C701 /* MemoryGame.swift in Sources */,
 				5861E1F325A58AAC00E9C701 /* MemoryPickerApp.swift in Sources */,
 				5861E22B25A5931200E9C701 /* EmojiMemoryGame.swift in Sources */,
+				585507C525A6DA16002DA890 /* Array+Identifiable.swift in Sources */,
+				580D065C25A5F7CC000EF3A7 /* GridLayout.swift in Sources */,
 				5861E23025A5DC8B00E9C701 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
