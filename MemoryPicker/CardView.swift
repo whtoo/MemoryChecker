@@ -20,8 +20,8 @@ struct CardView: View {
         
             ZStack {
                 if card.isFaceUp {
-                    RoundedRectangle(cornerRadius: 10.0).fill()
-                    RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
+                    RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+                    RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 1)
                     Text(card.content)
                 } else {
                     RoundedRectangle(cornerRadius: 10.0).fill()
