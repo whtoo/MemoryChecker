@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    var viewModel : EmojiMemoryGame
+    @ObservedObject var viewModel : EmojiMemoryGame
     
     var body: some View {
         Grid(items: viewModel.cards) { card in
             CardView(card: card).onTapGesture(perform: {
-                viewModel.choose(card: card)
-            })
+                self.viewModel.choose(card: card)
+            }).padding(5)
         }.foregroundColor(.orange).padding()
     }
 }
