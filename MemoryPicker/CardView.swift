@@ -16,19 +16,21 @@ struct CardView: View {
         }
     }
     
-    func body(for size: CGSize) ->  some View {
-        
+    @ViewBuilder func body(for size: CGSize) ->  some View {
             ZStack {
-                if card.isFaceUp {
-                    RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
-                    RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 1)
-                    Text(card.content)
-                } else {
-                    RoundedRectangle(cornerRadius: 10.0).fill()
-                }
+                
+                    if card.isFaceUp {
+                        RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+                        RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 1)
+                        Pie(startAngle: Angle(degrees: 0),endAngle: Angle(degrees: 270)).padding(5).opacity(0.4)
+                        Text(card.content)
+                    } else {
+                        if !card.isMatched {
+                            RoundedRectangle(cornerRadius: 10.0).fill()
+                        }
+                    }
                 
             }.font(Font.system(size: min(size.width,size.height) * 0.75))
-       
     }
 }
 struct CardView_Previews: PreviewProvider {
