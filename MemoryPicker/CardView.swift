@@ -16,21 +16,20 @@ struct CardView: View {
         }
     }
     
-    @ViewBuilder func body(for size: CGSize) ->  some View {
+    @ViewBuilder
+    private func body(for size: CGSize) ->  some View {
+        if card.isFaceUp || !card.isMatched {
             ZStack {
-                
-                    if card.isFaceUp {
-                        RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
-                        RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 1)
-                        Pie(startAngle: Angle(degrees: 0),endAngle: Angle(degrees: 270)).padding(5).opacity(0.4)
-                        Text(card.content)
-                    } else {
-                        if !card.isMatched {
-                            RoundedRectangle(cornerRadius: 10.0).fill()
-                        }
-                    }
-                
-            }.font(Font.system(size: min(size.width,size.height) * 0.75))
+                    Pie(startAngle: Angle(degrees: 0),endAngle: Angle(degrees: 270)).padding(5).opacity(0.4)
+                    Text(card.content)
+                }.font(Font.system(size: fontSize(for: size)))
+            .cardify(isFaceUp: card.isFaceUp)
+        }
+       
+    }
+    
+    private func fontSize(for size: CGSize) -> CGFloat  {
+        min(size.width, size.height) * 0.7
     }
 }
 struct CardView_Previews: PreviewProvider {
