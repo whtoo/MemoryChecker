@@ -14,7 +14,9 @@ struct ContentView: View {
         VStack{
             Grid(items: viewModel.cards) { card in
                 CardView(card: card).onTapGesture(perform: {
-                    self.viewModel.choose(card: card)
+                    withAnimation(Animation.easeIn(duration: 0.75)) {
+                        self.viewModel.choose(card: card)
+                    }
                 }).padding(5)
             }
             Button(action: {
