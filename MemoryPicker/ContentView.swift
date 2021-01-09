@@ -11,10 +11,19 @@ struct ContentView: View {
     @ObservedObject var viewModel : EmojiMemoryGame
     
     var body: some View {
-        Grid(items: viewModel.cards) { card in
-            CardView(card: card).onTapGesture(perform: {
-                self.viewModel.choose(card: card)
-            }).padding(5)
+        VStack{
+            Grid(items: viewModel.cards) { card in
+                CardView(card: card).onTapGesture(perform: {
+                    self.viewModel.choose(card: card)
+                }).padding(5)
+            }
+            Button(action: {
+                withAnimation(.easeInOut) {
+                    self.viewModel.resetGame()
+                }
+            }, label: {
+                Text("New Game")
+            }).foregroundColor(.blue)
         }.foregroundColor(.orange).padding()
     }
 }
